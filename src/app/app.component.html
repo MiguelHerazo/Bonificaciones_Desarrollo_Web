@@ -1,0 +1,4 @@
+<button (click)="mostrar = !mostrar">Mostrar / Ocultar Componente</button>
+<input type="text" [(ngModel)]="texto">
+
+<app-ciclo-vida *ngIf="mostrar" [mensaje]="texto"></app-ciclo-vida>
